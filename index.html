@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francisco José Lavalle</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preload" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <!-- ----------Inicio Header---------- -->
+    <header class="header">
+        <div class="header__cont">
+            <!-- Inicio navegación -->
+            <nav class="header__cont-nav">
+                <ul class="header__cont-nav-ul">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#sobreMi">Sobre mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <!-- Fin navegación -->
+
+            <div class="header__cont-div visible">
+                <h1>Francisco<span>José</span>Lavalle</h1>
+                <span class="headerSpan">Programador Web</span>
+            </div>
+            <div class="header__cont-div oculto">
+                <h1 class="h1">Francisco José Lavalle</h1>
+                <span class="headerSpan">Programador Web</span>
+            </div>
+        </div>
+    </header>
+    <!-- ----------Fin Header---------- -->
+
+
+    <!-- ----------Inicio Main---------- -->
+    <main class="main">
+        <!-- Inicio sobre mí -->
+        <section class="main__sobreMi" id="sobreMi">
+            <h2 class="h2">Sobre mí</h2>
+            <!-- Inicio quién soy -->
+            <div class="main__sobreMi-quienSoy">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae dignissimos dolorum repellendus
+                    dolores iste illum animi! Est nisi quo autem tempora, velit temporibus voluptates pariatur impedit
+                    consectetur, quos a recusandae?
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus asperiores cupiditate neque
+                    quaerat ipsa quo provident at, error odit sequi explicabo corrupti, dolorem dicta, quisquam in?
+                    Amet, dicta perspiciatis?</p>
+            </div>
+            <!-- Fin quién soy -->
+
+            <!-- Inicio lenguajes -->
+            <div class="main__sobreMi-lenguajes">
+                <h3>Lenguajes que manejo</h3>
+                <div class="main__sobreMi-lenguajes-cont">
+                    <div data-aos="fade-up-right">
+                        <img src="./img/html-5.webp" alt="HTML5">
+                        <p>HTML5</p>
+                    </div>
+                    <div data-aos="fade-down-right">
+                        <img src="./img/css-3.webp" alt="CSS3">
+                        <p>CSS3</p>
+                    </div>
+                    <div data-aos="flip-left">
+                        <img src="./img/bootstrap.webp" alt="Bootstrap">
+                        <p>Bootstrap5</p>
+                    </div>
+                    <div data-aos="flip-right">
+                        <img src="./img/sass.webp" alt="SASS">
+                        <p>SASS</p>
+                    </div>
+                    <div data-aos="fade-down">
+                        <img src="./img/git.webp" alt="GIT">
+                        <p>GIT</p>
+                    </div>
+                    <div data-aos="flip-right">
+                        <img src="./img/js.webp" alt="JavaScript">
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin lenguajes -->
+        </section>
+        <!-- Fin sobre mí -->
+
+        <!-- Inicio proyectos -->
+        <section class="main__proyectos" id="proyectos">
+            <h2 class="h2">Proyectos realizados</h2>
+            <div class="main__proyectos-listado"></div>
+            <div class="main__proyectos-listadoOculto">
+                <div class="main__proyectos-cont" data-aos="fade-up">
+                    <div>
+                        <img src="./img/code.png" alt="Icono Proyecto">
+                        <button class="boton botonProyectos"><a href="https://cafeblogterminado.netlify.app/"
+                                target="_blank">Blog de café</a></button>
+                    </div>
+                    <p>Incluye HTML5 y CSS3</p>
+                </div>
+                <div class="main__proyectos-cont" data-aos="fade-up">
+                    <div>
+                        <img src="./img/code.png" alt="Icono Proyecto">
+                        <button class="boton botonProyectos"><a href="https://anunciacion.netlify.app/"
+                                target="_blank">Página INSA</a></button>
+                    </div>
+                    <p>Incluye HTML5 y CSS3</p>
+                </div>
+                <div class="main__proyectos-cont" data-aos="fade-up">
+                    <div>
+                        <img src="./img/code.png" alt="Icono Proyecto">
+                        <button class="boton botonProyectos"><a href="https://puntajes.netlify.app/"
+                                target="_blank">Contador de puntajes</a></button>
+                    </div>
+                    <p>Incluye HTML5, CSS3 y JavaScript</p>
+                </div>
+            </div>
+            <button class="btnVisible boton" data-aos="fade-up">Ver más</button>
+            <button class="btnOculto boton" data-aos="fade-up">Ver menos</button>
+        </section>
+        <!-- Fin proyectos -->
+
+        <!-- Inicio Contacto -->
+        <section class="main__contacto" id="contacto" data-aos="fade-up">
+            <div class="main__contacto-redes">
+                <h3>Redes sociales: </h3>
+                <a href="https://www.linkedin.com/in/francisco-lavalle-336330216/" target="_blank"><img
+                        src="./img/linkedin.png" alt="LinkedIn">LinkedIn</a>
+            </div>
+            <form class="main__contacto-formulario" action="https://formspree.io/f/mbjwkbzp" method="POST">
+                <fieldset>
+                    <legend class="h2">Contacto</legend>
+                    <div>
+                        <label for="name">Nombre: </label>
+                        <input type="text" id="name" name="name" placeholder="Ingresá tu nombre" required>
+                    </div>
+                    <div>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" placeholder="Ingresá tu email" required>
+                    </div>
+                    <div class="messageDiv">
+                        <label for="message">Mensaje: </label>
+                        <textarea id="message" name="message" placeholder="Ingresá tu mensaje" required></textarea>
+                    </div>
+                    <input type="submit" class="boton">
+                    <input type="reset" class="boton">
+                </fieldset>
+            </form>
+        </section>
+        <!-- Fin Contacto -->
+    </main>
+    <!-- ----------Fin Main---------- -->
+
+
+    <!-- ----------Inicio Footer---------- -->
+    <footer class="footer">
+        <!-- Inicio navegación -->
+        <nav class="footer__nav">
+            <ul class="footer__nav-ul">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#sobreMi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Fin navegación -->
+    </footer>
+    <!-- ----------Fin Footer---------- -->
+
+
+    <!-- Script para Js -->
+    <script src="./scripts/formulario.js"></script>
+    <script src="./scripts/app.js"></script>
+    <!-- Script para Js -->
+
+    <!-- Script para AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Script para AOS -->
+</body>
+
+</html>
