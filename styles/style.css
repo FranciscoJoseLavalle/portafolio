@@ -100,7 +100,9 @@ span {
     font-weight: 400;
 }
 .fotoMia {
-    width: 12rem;
+    width: 20%;
+    min-width: 10rem;
+    max-width: 15rem;
     margin: auto;
     border-radius: 50%;
     border: solid .14rem #f94;
@@ -206,7 +208,7 @@ span {
     gap: 1rem;
 }
 .main__proyectos img {
-    width: 6rem;
+    width: 10rem;
     padding: .3rem;
     border-radius: .7rem;
 }
@@ -231,6 +233,7 @@ span {
     display: grid;
     grid-template-columns: 1fr 2fr;
     width: 80%;
+    max-width: 50rem;
     margin: auto;
     border-radius: .6rem;
     box-shadow: #777 1px 1px 10px;
