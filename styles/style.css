@@ -103,8 +103,22 @@ span {
     width: 12rem;
     margin: auto;
     border-radius: 50%;
-    border: solid .2rem #f94;
-    box-shadow: #000 1px 1px 20px 10px;
+    border: solid .14rem #f94;
+    animation: fotoMia 2s linear infinite;
+}
+@keyframes fotoMia {
+    0% {
+        box-shadow: #f94 0px 0px 0px 0px;
+    }
+    30% {
+        box-shadow: #f94 0px 0px 6px 6px;
+    }
+    65% {
+        box-shadow: #f94 0px 0px 10px 10px;
+    }
+    100% {
+        box-shadow: #f94 0px 0px 0px 0px;
+    }
 }
 .headerSpan {
     font-size: 1.25rem;
