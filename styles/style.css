@@ -78,11 +78,13 @@ span {
     width: 100%;
     height: 100vh;
     text-align: center;
-    display: grid;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .header__cont-div {
     padding: 2rem;
+    margin: auto;
 }
 .visible {
     display: flex;
@@ -98,34 +100,115 @@ span {
 .header__cont-div h1 span {
     font-weight: 400;
 }
-.fotoMia {
+.fotoCont {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    height: 20vw;
+    min-height: 10rem;
+    max-height: 15rem;
+    /* align-items: center; */
+}
+.fotoCont-container {
+    position: relative;
     width: 20%;
+    min-width: 10rem;
+    max-width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botonCont {
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .6s;
+    animation: boton 1.5s linear infinite;
+}
+.botonCont button {
+    padding: .5rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: #f94 solid .15rem;
+    color: #f94;
+    border-radius: .3rem;
+    font-size: 1rem;
+}
+.fotoMia {
+    position: absolute;
+    width: 20vw;
     min-width: 10rem;
     max-width: 15rem;
     margin: auto;
     border-radius: 50%;
     border: solid .14rem #f94;
-    animation: fotoMia 2s linear infinite;
+    animation: fotoMia 3s linear infinite;
+    transform: perspective(600px) rotateY(0deg);
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .5s;
+}
+.fotoCont-container:hover .fotoMia{
+    transform: perspective(600px) rotateY(180deg);
+}
+.fotoCont-container:hover .botonCont{
+    transform: perspective(600px) rotateY(360deg);
 }
 @keyframes fotoMia {
     0% {
         box-shadow: #f94 0px 0px 0px 0px;
     }
     30% {
-        box-shadow: #f94 0px 0px 6px 6px;
+        box-shadow: #f94 0px 0px 10px 5px;
     }
     65% {
-        box-shadow: #f94 0px 0px 10px 10px;
+        box-shadow: #f94 0px 0px 20px 5px;
     }
     100% {
         box-shadow: #f94 0px 0px 0px 0px;
     }
 }
+@keyframes boton {
+    0% {
+        box-shadow: #000 0px 0px 0px 0px;
+    }
+    30% {
+        box-shadow: #000 0px 0px 10px 2px;
+    }
+    65% {
+        box-shadow: #000 0px 0px 15px 2px;
+    }
+    100% {
+        box-shadow: #000 0px 0px 0px 0px;
+    }
+}
 .headerSpan {
     font-size: 1.25rem;
 }
-
+.arrowCont {
+    margin: 2rem 0;
+}
+.arrow {
+    width: 3rem;
+    filter: opacity(0.5) drop-shadow(0 0 0 #fff); 
+    animation: arrow .7s linear infinite;
+}
+@keyframes arrow {
+    0% {
+        transform: rotate(270deg) translateX(0rem);
+    }
+    50% {
+        transform: rotate(270deg) translateX(.5rem);
+    }
+    100% {
+        transform: rotate(270deg) translateX(0rem);
+    }
+}
 /* Inicio nav */
+.header__cont-nav {
+    margin-top: 1rem;
+}
 .header__cont-nav-ul {
     display: flex;
     justify-content: space-evenly;
@@ -396,5 +479,10 @@ span {
     }
     .main__sobreMi-quienSoy {
         width: 80%;
+    }
+}
+@media all and (max-height: 740px) {
+    .arrowCont {
+        display: none;
     }
 }
