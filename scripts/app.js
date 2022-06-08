@@ -6,11 +6,13 @@ const boton = document.querySelector('.btnVisible');
 let proyectosMostrados = [];
 
 const proyectos = [
-    { nombre: 'Finanzas', lenguajes: 'HTML5, CSS3, GIT, JavaScript', enlace: 'https://finanzaspersonales.netlify.app/', imagen: './img/finanzas.webp'},
-    { nombre: 'Manga Store', lenguajes: 'HTML5, CSS3, GIT y JavaScript', enlace: 'https://mangasstore.netlify.app/index.html', imagen: './img/mangasstore.webp' }
+    { nombre: 'Manga Store', lenguajes: 'HTML5, CSS3, GIT y JavaScript', enlace: 'https://mangasstore.netlify.app/index.html', imagen: './img/mangasstore.webp' },
+    { nombre: 'Ayurveda', lenguajes: 'XML, CSS3, GIT y React', enlace: 'https://franciscojoselavalle.github.io/PrimeraReact/', imagen: './img/ayurveda.png' }
+
 ];
 
 const proyectitosOcultos = [
+    { nombre: 'Finanzas', lenguajes: 'HTML5, CSS3, GIT, JavaScript', enlace: 'https://finanzaspersonales.netlify.app/', imagen: './img/finanzas.webp'},
     { nombre: 'Wordle', lenguajes: 'HTML5, CSS3 y JavaScript', enlace: 'https://franciscojoselavalle.github.io/wordlefran/', imagen: './img/wordle.webp' },
     { nombre: 'Blog de café', lenguajes: 'Incluye HTML5 y CSS3', enlace: 'https://cafeblogterminado.netlify.app/', imagen: './img/cafe.webp'},
     { nombre: 'Blog de cubos', lenguajes: 'HTML5, CSS3, SASS, GIT, Bootstrap5 y JavaScript', enlace: 'https://cubosveloces.netlify.app/', imagen: './img/cubo.webp' }
