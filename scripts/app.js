@@ -6,8 +6,8 @@ const boton = document.querySelector('.btnVisible');
 let proyectosMostrados = [];
 
 const proyectos = [
-    { nombre: 'Manga Store', lenguajes: 'HTML5, CSS3, GIT y JavaScript', enlace: 'https://mangasstore.netlify.app/index.html', imagen: './img/mangasstore.webp' },
-    { nombre: 'Ayurveda', lenguajes: 'XML, CSS3, GIT y React', enlace: 'https://franciscojoselavalle.github.io/PrimeraReact/', imagen: './img/ayurveda.png' }
+    { nombre: 'Ayurveda', lenguajes: 'XML, CSS3, GIT y React', enlace: 'https://franciscojoselavalle.github.io/PrimeraReact/', imagen: './img/ayurveda.png' },
+    { nombre: 'Manga Store', lenguajes: 'HTML5, CSS3, GIT y JavaScript', enlace: 'https://mangasstore.netlify.app/index.html', imagen: './img/mangasstore.webp' }
 
 ];
 
