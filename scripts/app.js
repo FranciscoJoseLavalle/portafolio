@@ -7,11 +7,12 @@ let proyectosMostrados = [];
 
 const proyectos = [
     { nombre: 'Ayurveda', lenguajes: 'XML, CSS3, GIT y React', enlace: 'https://franciscojoselavalle.github.io/PrimeraReact/', imagen: './img/ayurveda.png' },
-    { nombre: 'Manga Store', lenguajes: 'HTML5, CSS3, GIT y JavaScript', enlace: 'https://mangasstore.netlify.app/index.html', imagen: './img/mangasstore.webp' }
+    { nombre: 'Oreo Clicker', lenguajes: 'HTML5, CSS3, GIT y JavaScript', enlace: 'https://oreoclicker.netlify.app/', imagen: './img/oreo.png' }
 
 ];
 
 const proyectitosOcultos = [
+    { nombre: 'Manga Store', lenguajes: 'HTML5, CSS3, GIT y JavaScript', enlace: 'https://mangasstore.netlify.app/index.html', imagen: './img/mangasstore.webp' },
     { nombre: 'Finanzas', lenguajes: 'HTML5, CSS3, GIT, JavaScript', enlace: 'https://finanzaspersonales.netlify.app/', imagen: './img/finanzas.webp'},
     { nombre: 'Wordle', lenguajes: 'HTML5, CSS3 y JavaScript', enlace: 'https://franciscojoselavalle.github.io/wordlefran/', imagen: './img/wordle.webp' },
     { nombre: 'Blog de café', lenguajes: 'Incluye HTML5 y CSS3', enlace: 'https://cafeblogterminado.netlify.app/', imagen: './img/cafe.webp'},
