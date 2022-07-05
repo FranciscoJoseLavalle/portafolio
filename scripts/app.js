@@ -6,7 +6,7 @@ const boton = document.querySelector('.btnVisible');
 let proyectosMostrados = [];
 
 const proyectos = [
-    { nombre: 'Ayurveda', lenguajes: 'XML, CSS3, GIT y React', enlace: 'https://franciscojoselavalle.github.io/PrimeraReact/', imagen: './img/ayurveda.png' },
+    { nombre: 'Ayurveda', lenguajes: 'ReactJS, CSS3, GIT y Firebase', enlace: 'https://franciscojoselavalle.github.io/PrimeraReact/', imagen: './img/ayurveda.png' },
     { nombre: 'Oreo Clicker', lenguajes: 'HTML5, CSS3, GIT y JavaScript', enlace: 'https://oreoclicker.netlify.app/', imagen: './img/oreo.png' }
 
 ];
