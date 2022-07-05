@@ -68,10 +68,11 @@ span {
 
 /* ----------Inicio Header---------- */
 .header {
-    background-image: url(../img/fondo2.webp);
+    /* background-image: url(../img/fondo2.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+    background: radial-gradient(#666, #000 95%);
 }
 .header__cont {
     background-color: #0008;
